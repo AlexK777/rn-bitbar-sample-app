@@ -1,0 +1,13 @@
+.DS_Store
+
+android/app/build/
+android/app/release
+android/build/
+
+*.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+ios/build
+ios/fastlane-logs
+ios/build-artifacts
+ios/derived-data
