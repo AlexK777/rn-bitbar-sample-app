@@ -31,7 +31,7 @@
       "configurations": {
         "android": {
           "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-          "name": "Pixel2_XL_Nougat",
+          "name": "Pixel_Nougat",
           "type": "android.emulator"
         }
       }
