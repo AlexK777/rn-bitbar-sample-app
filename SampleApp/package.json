@@ -7,8 +7,8 @@
     "build-ios": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "test": "jest",
-    "test-android": "npx react-native start --reset-cache && npx cucumber-js e2e/features -- platform=android",
-    "test-ios": "npx react-native start --reset-cache && npx cucumber-js e2e/features -- platform=ios"
+    "test-android": "npx react-native start --reset-cache & npx cucumber-js e2e/features -- platform=android",
+    "test-ios": "npx react-native start --reset-cache & npx cucumber-js e2e/features -- platform=ios"
   },
   "dependencies": {
     "react": "16.6.1",

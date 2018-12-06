@@ -25,3 +25,7 @@ BeforeAll({timeout: 89 * 1000}, async () => {
         console.log(error);
     }
 });
+
+AfterAll(async () => {
+    await detox.cleanup();
+});
