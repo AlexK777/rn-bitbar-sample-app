@@ -31,7 +31,7 @@
       "configurations": {
         "android": {
           "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-          "name": "Pixel_Nougat",
+          "name": "Android_Accelerated_Oreo",
           "type": "android.emulator"
         }
       }
