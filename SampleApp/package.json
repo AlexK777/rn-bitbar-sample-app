@@ -31,7 +31,7 @@
       "configurations": {
         "android": {
           "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-          "name": "Android_Accelerated_Oreo",
+          "name": "pixel_xl_emulator",
           "type": "android.emulator"
         }
       }
