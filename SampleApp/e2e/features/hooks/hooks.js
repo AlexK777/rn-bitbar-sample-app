@@ -6,7 +6,7 @@ const detoxConfigs = require('../../../package').detox;
 /* eslint-enable node/no-unpublished-require */
 
 /* eslint new-cap: off, no-undef: off */
-BeforeAll({timeout: 89 * 1000}, async () => {
+BeforeAll({timeout: 300 * 1000}, async () => {
     let detoxConfig;
 
     const isAndroid = process.argv[process.argv.length - 1].includes('android');
