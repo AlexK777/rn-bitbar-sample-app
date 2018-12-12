@@ -22,6 +22,10 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+*/node_modules/
+
+/android/app/build
+
 # Android/IntelliJ
 #
 build/

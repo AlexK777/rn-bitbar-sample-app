@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build-android": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+    "build-android-release": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..",
     "build-ios": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "test": "jest",
-    "test-android": "npx react-native start --reset-cache & npx cucumber-js e2e/features -- platform=android",
+    "test-android": "npx cucumber-js e2e/features -- platform=android",
     "test-ios": "npx react-native start --reset-cache & npx cucumber-js e2e/features -- platform=ios"
   },
   "dependencies": {
@@ -30,8 +31,8 @@
     "androidConfig": {
       "configurations": {
         "android": {
-          "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-          "name": "pixel_xl_emulator",
+          "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+          "name": "Pixel2_XL_Nougat",
           "type": "android.emulator"
         }
       }
