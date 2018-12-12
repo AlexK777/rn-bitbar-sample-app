@@ -120,10 +120,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("/Users/akoon/Documents/SampleAppKeys/android.jks")
-            storePassword $KEYSTORE_PASSWORD
-            keyAlias $APP_KEY
-            keyPassword $APP_KEY_PASSWORD
+            storeFile file($BITRISEIO_ANDROID_KEYSTORE_URL)
+            storePassword $BITRISEIO_ANDROID_KEYSTORE_PASSWORD
+            keyAlias $BITRISEIO_ANDROID_KEYSTORE_ALIAS
+            keyPassword $BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD
         }
     }
     buildTypes {
