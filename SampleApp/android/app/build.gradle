@@ -120,7 +120,7 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("SampleApp/android/keystores/android.jks")
+            storeFile file("keystores/android.jks")
             storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
             keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
             keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
