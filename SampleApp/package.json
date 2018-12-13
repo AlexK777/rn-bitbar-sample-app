@@ -33,7 +33,7 @@
         "android": {
           "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
           "name": "pixel_xl_emulator",
-          "type": "android.emulator"
+          "type": "android.attached"
         }
       }
     },
