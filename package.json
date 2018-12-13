@@ -1,0 +1,50 @@
+{
+  "name": "SampleApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build-android": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+    "build-android-release": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..",
+    "build-ios": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+    "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "test": "jest",
+    "test-android": "npx cucumber-js e2e/features -- platform=android",
+    "test-ios": "npx react-native start --reset-cache & npx cucumber-js e2e/features -- platform=ios"
+  },
+  "dependencies": {
+    "react": "16.6.1",
+    "react-native": "0.57.7"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "cucumber": "^5.0.3",
+    "detox": "^9.1.2",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.50.0",
+    "react-test-renderer": "16.6.1",
+    "watchman": "^1.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "detox": {
+    "androidConfig": {
+      "configurations": {
+        "android": {
+          "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+          "name": "pixel_xl_emulator",
+          "type": "android.emulator"
+        }
+      }
+    },
+    "iosConfig": {
+      "configurations": {
+        "ios": {
+          "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/hyvee.grocery.app",
+          "type": "ios.simulator",
+          "name": "iPhone X"
+        }
+      }
+    }
+  }
+}
